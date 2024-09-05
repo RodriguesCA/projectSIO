@@ -1,0 +1,10 @@
+Lista de Vulnerabilidades - Projeto SIO
+
+1º XSS (done) Falta corrigir
+2º SQL Injection (done) Falta corrigir
+3º CSRF (done) Falta corrigir
+4º Use of Single-factor Authentication (done) Falta corrigir
+5º Use of Password Hash Instead of Password for Authentication (done) Falta corrigir
+6º ?
+7º ? 
+8º ?

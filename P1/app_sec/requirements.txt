@@ -1,0 +1,7 @@
+flask
+flask-wtf
+pyodbc
+flask-cors
+qrcode
+pyotp
+html
