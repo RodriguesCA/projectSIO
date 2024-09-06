@@ -27,11 +27,12 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=2)
 @app.before_request
 def make_session_permanent():
     session.permanent = True
-
+'''
 @app.after_request
 def set_secure_headers(response):
     response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self'; style-src 'self';"
     return response
+    '''
 
 def product_exists(product_name, products):
     """Verifica se um produto com determinado nome existe na lista de produtos"""
@@ -217,6 +218,7 @@ def product(productName):
     else: redirect('/shop')
 
 @app.route('/submit_review', methods=['POST'])
+@csrf.exempt
 def submit_review():
     data = request.json
     review_text = escape(data.get('reviewText'))
